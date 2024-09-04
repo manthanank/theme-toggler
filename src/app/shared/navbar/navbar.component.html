@@ -1,9 +1,11 @@
-<nav class="flex justify-between items-center p-2 bg-gray-700 text-white">
-    <div class="text-2xl font-bold">
-        Theme Toggler
+<nav class="flex justify-between items-center p-2 bg-gray-700 text-white dark:bg-gray-900">
+    <div class="flex items-center">
+        <div class="text-2xl font-bold dark:text-white">
+            Theme Toggler
+        </div>
     </div>
     <div>
-        <button (click)="toggleTheme()" class="bg-gray-700 p-4 rounded dark:text-white">
+        <button (click)="toggleTheme()" class="bg-gray-700 p-4 rounded dark:text-white dark:bg-gray-900">
             <i [ngClass]="currentTheme === 'light' ? 'fas fa-sun' : 'fas fa-moon'"></i>
         </button>
     </div>
